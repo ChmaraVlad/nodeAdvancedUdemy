@@ -11,6 +11,7 @@ import BlogShow from './blogs/BlogShow';
 
 class App extends Component {
   componentDidMount() {
+    console.log("🚀 ~ App ~ componentDidMount ~ this.props:", this.props)
     this.props.fetchUser();
   }
 
@@ -33,4 +34,8 @@ class App extends Component {
   }
 }
 
-export default connect(null, actions)(App);
+function mapStateToProps({ auth }) {
+  return { auth };
+}
+
+export default connect(mapStateToProps, actions)(App);

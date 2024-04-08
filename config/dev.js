@@ -1,8 +1,8 @@
 module.exports = {
   googleClientID:
-    '70265989829-0t7m7ce5crs6scqd3t0t6g7pv83ncaii.apps.googleusercontent.com',
-  googleClientSecret: '8mkniDQOqacXtlRD3gA4n2az',
+    '1024940930115-c92crilt3uq8h14iqkrlhqcd68cn20k2.apps.googleusercontent.com',
+  googleClientSecret: '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',
   mongoURI:
-    'mongodb+srv://readonly:0Wc2It8kdXQ8INbh@cluster0.ffbere1.mongodb.net/advnode?retryWrites=true&w=majority',
+    'mongodb+srv://admin:bxcAoPhpqWdyPmXM@cluster0.wv4h2pl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
   cookieKey: '123123123',
 };
