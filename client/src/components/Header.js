@@ -4,14 +4,11 @@ import { Link } from 'react-router-dom';
 
 class Header extends Component {
   renderContent() {
-    console.log("🚀 ~ Header ~ renderContent ~ this.props.auth:", this.props.auth)
     switch (this.props.auth) {
-      case null:
-          return null
       case false:
         return (
           <li>
-            <a href={'/auth/google'}>Login With Google</a>
+            <a href={'http://localhost:5000/auth/google'}>Login With Google</a>
           </li>
         );
       default:
@@ -20,7 +17,7 @@ class Header extends Component {
             <Link to="/blogs">My Blogs</Link>
           </li>,
           <li key="2">
-            <a href={'/auth/logout'}>Logout</a>
+            <a href={'http://localhost:5000/auth/logout'}>Logout</a>
           </li>
         ];
     }

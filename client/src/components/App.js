@@ -11,7 +11,6 @@ import BlogShow from './blogs/BlogShow';
 
 class App extends Component {
   componentDidMount() {
-    console.log("🚀 ~ App ~ componentDidMount ~ this.props:", this.props)
     this.props.fetchUser();
   }
 
