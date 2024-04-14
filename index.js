@@ -9,6 +9,7 @@ const cors = require('express-cors')
 require('./models/User');
 require('./models/Blog');
 require('./services/passport');
+require('./services/cache');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI);
@@ -18,7 +19,6 @@ mongoose.connection.on('open', function (ref) {
 
     mongoose.connection.db.listCollections().toArray(function (err, names) {
       console.log("🚀 ~ names:", names)
-        console.log(names);
     });
 })
 
